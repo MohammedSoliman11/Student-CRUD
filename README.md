@@ -9,9 +9,13 @@ This repository outlines the implementation of CRUD (Create, Read, Update, Delet
 1. [Setup](#setup)
 2. [Authentication with Firebase Tokens](#authentication-with-firebase-tokens)
 3. [Endpoints](#endpoints)
-   - [Create User](#create-user)
-   - [Get User by ID](#get-user-by-id)
-   - [Get User Details](#get-user-details)
+   - [Register User](#register-user)
+   - [Login User](#login-user)
+   - [Create New Student](#create-new-student)
+   - [Get All Students](#get-all-students)
+   - [Get Student By ID](#get-student-by-id)
+   - [Delete Student By ID](#delete-student-by-id)
+   - [Update Student By ID](#update-student-by-id)
 4. [Implementation Details](#implementation-details)
    - [Middleware for Firebase Token Validation](#middleware-for-firebase-token-validation)
    - [MongoDB Schema](#mongodb-schema)
@@ -152,7 +156,7 @@ there're endpoints to handle all CRUDs for student in MongoDB
   }
   ```
 
-### Get a Single Student
+### Get Student By ID
 
 - **URL:** `GET /api/v1/students/{StudentID}`
 - **Description:** Get a Single Student from MongoDB.
@@ -172,7 +176,7 @@ there're endpoints to handle all CRUDs for student in MongoDB
   }
   ```
 
-### Delete a Single Student
+### Delete Student By ID
 
 - **URL:** `DELETE /api/v1/students/{StudentID}`
 - **Description:** Delete a Single Student from MongoDB.
@@ -183,7 +187,7 @@ there're endpoints to handle all CRUDs for student in MongoDB
   }
   ```
 
-### Update a Single Student
+### Update Student By ID
 
 - **URL:** `PUT /api/v1/students/{StudentID}`
 - **Description:** Update a Single Student from MongoDB.
